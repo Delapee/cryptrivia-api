@@ -5,8 +5,12 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1", features = ["macros"] }
+serde = "1.0.163"
 serde_json = { version = "1", features = ["raw_value"] }
 vercel_runtime = { version = "0.2.1" }
+rand = "0.8.5"
+gf256 = { version = "0.3.0", features= ["shamir", "thread-rng"] }
+
 
 [[bin]]
 name = "handler"

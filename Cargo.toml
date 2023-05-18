@@ -13,5 +13,9 @@ gf256 = { version = "0.3.0", features= ["shamir", "thread-rng"] }
 
 
 [[bin]]
-name = "shamir_generate"
+name = "generate"
 path = "api/shamir/generate.rs"
+
+[[bin]]
+name = "reconstruct"
+path = "api/shamir/reconstruct.rs"

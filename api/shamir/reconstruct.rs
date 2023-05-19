@@ -50,7 +50,7 @@ pub async fn handler(req: Request) -> Result<Response<Body>, Error> {
                 match str::from_utf8(&reconstruction) {
                     Ok(secret) => {
                         return Ok(Response::builder()
-                            .status(StatusCode::Ok)
+                            .status(StatusCode::OK)
                             .header("Content-Type", "application/json")
                             .body(json!({ "secret": secret }).to_string().into())?)
                     }
